@@ -32,19 +32,12 @@ public class App {
             }
             
             arrayChar[i] =letter;
-           // System.out.printf("Letter : : %s%n" , (letter));
-            //System.out.printf("Arrays.toString(arrayChar) : %s%n" , (Arrays.toString(arrayChar)));
-            //System.out.printf("Arrays.asList(arrayChar).contains(letter) : %b%n" , (Arrays.asList(arrayChar).contains(letter)));
-
-                        
-            
+                     
             boolean isUnique = true;
 
             for(int j = i+1 ; j < s.length();j++){
                 String letter2 = String.valueOf(s.charAt(j));
-                //System.out.printf("%d %s %d %s %b %n", i, letter, j, letter2, (letter==letter2));
                 if(letter.equalsIgnoreCase(letter2)){
-                   // System.out.println("Hacemos unique = false");
                     isUnique = false;
                     break;
                 }
